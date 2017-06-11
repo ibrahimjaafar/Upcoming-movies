@@ -7,9 +7,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-/**
- * Example program to list links from a URL.
- */
+
 public class Upcoming {
     public static void main(String[] args) throws IOException {
        
@@ -23,8 +21,7 @@ public class Upcoming {
         for(Element row : doc.select("tbody tr")) {
 
             final String title = row.select(".overview-top h4").text();
-           // final String rating = row.select(".imdbRating").text();
-
+          
             result = (title );
             
             System.out.println(result);
